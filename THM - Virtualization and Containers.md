@@ -1,45 +1,45 @@
-## What is virtualization
-### Notes
-- None
-### Questions
-- Scalability is a primary benefit of virtualization?
-- Operating system of a vm is called a Guest OS
+# Virtualization & Containerization
+
+## What is Virtualization
+
+Scalability is a primary benefit of virtualization. The operating system of a VM is referred to as the **Guest OS**.
+
+---
 
 ## Hypervisors
-### Notes
-- A hypervisor provides the ability to create the abstraction layer between hardware and software.
-- Type One hypervisors
-	- Create an abstraction layer directly between hardware and virtual machines without a common operating system between them. Instead, the hypervisor is the operating system
-- **Type 2 hypervisors**, also known as **hosted hypervisors**
-	- Examples of type 2 hypervisors include VMware Workstation, VMware Fusion, VirtualBox, Parallels, and QEMU.
-### Questions
-- VirtualBox is known as a type 2
-- Type ones are known as bare metal hypervisors
+
+A hypervisor provides the ability to create the abstraction layer between hardware and software.
+
+**Type 1 Hypervisors** (also known as **bare metal hypervisors**) create an abstraction layer directly between hardware and virtual machines without a common operating system between them — the hypervisor itself acts as the operating system.
+
+**Type 2 Hypervisors** (also known as **hosted hypervisors**) run on top of an existing OS. Examples include VMware Workstation, VMware Fusion, VirtualBox, Parallels, and QEMU.
+
+---
 
 ## Containers
-### Notes
-- Containers have their own filesystem, a portion of computing resources (CPU, RAM), a process space, and more
-### Questions
-- Containers are not completely abstracting from the host operating system
+
+Containers have their own filesystem, a portion of computing resources (CPU, RAM), a process space, and more. Unlike VMs, containers are **not** completely abstracted from the host operating system.
+
+---
 
 ## Docker
-### Notes 
-- Docker Hub is a remote repository for Docker images, similar to GitHub
-### Questions
-- In order to run the container we need to:
-	- Run the provided command
-	- and then curl the ip address that was given to get the flag
+
+Docker Hub is a remote repository for Docker images, similar to GitHub. To run a container, execute the provided command, then curl the given IP address to retrieve the flag.
+
+---
 
 ## Kubernetes
-### Notes
-- **Kubernetes**, also shortened to "**K8s**," is one such solution known as an **orchestration platform**.
-### Questions
-- For the first one we just run the provided command
-- For the second one we run `kubectl get pods`
-- Third one we run `kubectl get pods -A`
-- Fourth one we find from the first get pods command
-- For the fifth one you run `kubectl get deployments`
-- 6th one we run `kubectl get services`
-- 7th one we run `kubectl get rs`
-- 8th one we get from the previous command
-- 9th one is `kubectl delete deployment helloo-tryhackme`
+
+**Kubernetes** (shortened to **K8s**) is an orchestration platform used to manage containerized workloads at scale.
+
+| # | Task | Command |
+|---|------|---------|
+| 1 | Deploy the application | *(run the provided command)* |
+| 2 | List pods | `kubectl get pods` |
+| 3 | List pods across all namespaces | `kubectl get pods -A` |
+| 4 | Find pod name | *(from output of command #2)* |
+| 5 | List deployments | `kubectl get deployments` |
+| 6 | List services | `kubectl get services` |
+| 7 | List replica sets | `kubectl get rs` |
+| 8 | Find replica set name | *(from output of command #7)* |
+| 9 | Delete a deployment | `kubectl delete deployment helloo-tryhackme` |
