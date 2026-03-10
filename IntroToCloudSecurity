@@ -1,0 +1,65 @@
+# Architectural Concepts of Cloud
+
+**Notes**
+- None — all of this is review for me.
+
+**Questions**
+- In IaaS, the provider provides hardware.
+- A cloud provisioned for a single person is a private cloud.
+
+---
+
+# Cloud Security Concepts
+
+**Notes**
+- Data always needs to be protected; it is categorized into different data classifications.
+
+**Questions**
+- Create is the first step in the data lifecycle.
+- Got the flag by following the lifecycle.
+  - THM{CLOUD_11101}
+
+---
+
+# Cloud Security Risks Concerning Deployment Models
+
+**Notes**
+- None.
+
+**Questions**
+- In the public cloud, a user can become a victim of vendor lock-in.
+- It is very difficult to enforce and manage policy in a community cloud.
+
+---
+
+# Security Through Access Management
+
+**Notes**
+- Who can access what — identity management.
+
+**Questions**
+- Face ID is a type of biometric authentication.
+
+---
+
+# Security Through Policy
+
+**Notes**
+- None.
+
+**Questions**
+- You can base access on the time of day — did not know that.
+
+---
+
+# Security Through Network Management
+
+**Notes**
+- Good practice to deny all traffic unless specifically permitted.
+
+---
+
+# Security Through Storage Management
+
+**Notes**
+- Encryption of data is always necessary.
